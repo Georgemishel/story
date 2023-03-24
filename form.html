@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i</title>
+
+    <style>
+    html, body {
+      width:100%;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  
+    body {
+      background-color: #f1f1f1;   
+    }
+
+    div#root {
+      min-width: 100px;
+      max-width: 700px;
+      margin: 0 auto;
+      min-height: 50%;
+      background-color: #F9F9F9;
+      box-shadow: 0px 0px 8px 4px #dddddd;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 0px 0px 6px 6px;
+    }
+
+    form.form {
+      padding: 0px 20px;
+      text-align: center;
+    }
+
+    span.form_control {
+      display: block;
+    }
+
+    span.form_control:not(.button_holder) {
+      text-align: left;
+    }
+
+    span.form_control + span.form_control {
+      margin-top: 15px;
+    }
+  
+    span.form_control label {
+      display: inline-block;
+      width: 100%;
+      font-size: x-small;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#CF9FFF;
+    }
+
+    span.form_control input {
+      display:inline;
+      background-color: transparent;
+      font-weight: 600;
+      width: 100%;
+      padding: 7px 0 3px;
+      border: none;
+      border-bottom: 1px solid purple;
+    }
+
+    span.form_control input:focus-visible {
+      outline: none;
+    }
+
+    span.form_control button {
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 600;
+      padding: 10px 80px;
+      border-radius: 4px;
+      color:white;
+      background-color: #CF9FFF;
+      border: none;
+    }
+
+    span.form_control button:hover {
+      background-color: darkmagenta;
+    }
+
+    .mishel {
+      color:#aa98a9;
+    }
+
+    .sabinus {
+      color: #aa98a9;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-small;
+    }
+
+    .funny {
+      color:#CF9FFF;
+      font-size: x-small;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ol#games {
+      padding: 0;
+      text-align: center;
+    }
+
+    ol#games li {
+      line-height: initial;
+    }
+
+    ol#games li span.greeting {
+      color: red;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    ol#games li:first-child {
+      margin-bottom: 30px;
+    }
+
+    ol#games li:last-child {
+      padding: 20px;
+    }
+
+    .v-align {
+      vertical-align: middle;
+    }
+
+    select {
+      border: none;
+      background-color: pink;
+    }
+
+    textarea#note {
+      resize: none;
+      width: 100%;
+      display: block;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+    </style>
+</head>
+<body>
+    <div id="root">
+      <form class="form" id="signup_form">
+        <span class="form_control">
+          <label for="fname" class="george">Full Name</label>
+          <input type="text" class="gname" name="fname" value="Nwokorie Ugonna George-Mishel">
+        </span>
+      
+        <span class="form_control">
+          <label for="lname" class="ugonna">Email</label>
+          <input type="email" class="uname" name="lname" value="ugonna@gmail.com">
+        </span>
+
+        <span class="form_control">
+          <label for="yname" class="mishel">Password</label>
+          <input type="password" class="mname" name="yname">
+        </span>
+        
+        <span class="form_control button_holder">
+          <button class="ugo">Get Started</button>
+        </span>
+
+        <p class="sabinus"> By signing up you are agreeing to our</p>
+        <p class="funny"><a href="#">Terms and Condition</a></p>
+      </form> 
+    </div>
+
+    <section>
+      <div>
+        <ol id="games" start="3">
+          <li>
+            <span class="greeting">Hello</span>
+            <select>
+              <option selected>...</option>
+              <option>Mr.</option>
+              <option>Master.</option>
+              <option>Chief.</option>
+              <option>JP. Dr.</option>
+            </select>
+            <span class="v-align">Ugonna Nwokorie</span><span class="v-align"><input type="checkbox"></span>
+            </li>
+          <li>World</li>
+          <li>Super</li>
+          <li>Mario</li>
+          <li>
+            <textarea id="note">
+
+            </textarea>
+          </li>
+        </ol>
+    </div>
+
+    <div>
+      <table></table>
+    </div>
+    </section>
+
+    <section style="display:flex; flex-direction: row; justify-content: center; align-items: center; height: 200px;">
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+    </section>
+</body>
+</html>
